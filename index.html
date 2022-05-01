@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    class="flex m-auto md:justify-center md:align-center md:w-[1440px] md:h-[800px] desktop-bg mobile-bg"
+  >
+    <div
+      class="flex-col flex md:flex-row w-[920px] justify-between vertical-center vertical-center-mobile items-end"
+    >
+      <div class="bg-dark-blue md:w-[355px] h-[205px] w-[325px] fylo">
+        <div class="p-9">
+          <img src="/images/logo.svg" alt="logo-svg" class="mb-8" />
+          <div class="flex">
+            <span class="icon-container flex justify-center">
+              <img
+                src="/images/icon-document.svg"
+                class="m-auto"
+                alt="document"
+              />
+            </span>
+            <span class="icon-container flex justify-center">
+              <img src="/images/icon-folder.svg" class="m-auto" alt="folder" />
+            </span>
+            <span class="icon-container flex justify-center">
+              <img src="/images/icon-upload.svg" class="m-auto" alt="upload" />
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-dark-blue md:w-[545px] w-[330px] h-[160px] rounded-lg ft-md text-white"
+      >
+        <p class="mt-10 ml-10">
+          You’ve used <span class="ft-lg">815 GB</span> of your storage
+        </p>
+        <div
+          class="w-[180px] p-4 bg-white text-black ft-lg text-3xl absolute top-0 right-8 gb"
+        >
+          185
+          <span class="light-grey text-sm">GB LEFT</span>
+        </div>
+        <div class="gb-size"><span class="dot"></span></div>
+
+        <p class="mt-1 ml-10">0 GB 1000 GB</p>
+      </div>
+    </div>
+  </body>
+</html>
