@@ -6,6 +6,8 @@
   background-image: url(/images/bg-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 375px;
+  height: auto;
 }
 .icon-container {
   width: 50px;
@@ -27,6 +29,52 @@
   top: 10%;
 }
 
+.ft-md {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+.ft-lg {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+.light-grey {
+  color: hsl(229, 7%, 55%);
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2px;
+}
+.gb-size {
+  width: 190px;
+  height: 14px;
+  border-radius: 999px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+  z-index: 10;
+}
+.gb-bg {
+  width: 260px;
+  background-color: hsla(229, 57%, 11%, 0.47);
+  border-radius: 999px;
+  height: 20px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+.gb {
+  border-radius: 10px;
+  left: 70px;
+  bottom: -35px;
+}
+
 @media (min-width: 768px) {
   .desktop-bg {
     background-image: url(/images/bg-desktop.png);
@@ -42,55 +90,37 @@
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-}
-.ft-md {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-.ft-lg {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-}
-.light-grey {
-  color: hsl(229, 7%, 55%);
-}
-.gb::after {
-  content: " ";
-  position: absolute;
-  right: 0;
-  bottom: -20px;
-  border-top: 20px solid white;
-  border-left: 20px solid transparent;
-  border-bottom: none;
-}
-.gb {
-  border-radius: 10px 10px 0px 10px;
-}
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: white;
-  border-radius: 50%;
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: 2px;
-}
-.gb-size {
-  width: 340px;
-  height: 14px;
-  border-radius: 999px;
-  background-image: linear-gradient(
-    to right,
-    hsl(6, 100%, 80%),
-    hsl(335, 100%, 65%)
-  );
-  z-index: 10;
-}
-.gb-bg {
-  width: 460px;
-  background-color: hsla(229, 57%, 11%, 0.47);
-  border-radius: 999px;
-  height: 20px;
-  padding-top: 3px;
-  padding-left: 3px;
+  .gb-bg {
+    width: 460px;
+    background-color: hsla(229, 57%, 11%, 0.47);
+    border-radius: 999px;
+    height: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+  }
+  .gb-size {
+    width: 340px;
+    height: 14px;
+    border-radius: 999px;
+    background-image: linear-gradient(
+      to right,
+      hsl(6, 100%, 80%),
+      hsl(335, 100%, 65%)
+    );
+    z-index: 10;
+  }
+  .gb::after {
+    content: " ";
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    border-top: 20px solid white;
+    border-left: 20px solid transparent;
+    border-bottom: none;
+  }
+  .gb {
+    border-radius: 10px 10px 0px 10px;
+    left: auto;
+    bottom: auto;
+  }
 }

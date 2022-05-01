@@ -19,12 +19,14 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body
-    class="flex m-auto md:justify-center md:align-center md:w-[1440px] md:h-[800px] desktop-bg mobile-bg"
+    class="flex m-auto justify-center align-center md:w-[1440px] md:h-[800px] desktop-bg mobile-bg"
   >
     <div
-      class="flex-col flex md:flex-row w-[920px] justify-between vertical-center vertical-center-mobile items-end"
+      class="flex-col flex md:flex-row md:w-[920px] justify-between vertical-center vertical-center-mobile md:items-end"
     >
-      <div class="bg-dark-blue md:w-[355px] h-[205px] w-[325px] fylo">
+      <div
+        class="bg-dark-blue md:w-[355px] h-[205px] w-[325px] mb-5 md:mb-auto fylo"
+      >
         <div class="p-9">
           <img src="/images/logo.svg" alt="logo-svg" class="mb-8" />
           <div class="flex">
@@ -51,7 +53,7 @@
           You’ve used <span class="ft-lg">815 GB</span> of your storage
         </p>
         <div
-          class="w-[180px] p-5 bg-white text-black ft-lg text-4xl absolute top-0 right-8 gb"
+          class="w-[180px] p-5 bg-white text-black ft-lg text-4xl absolute md:top-0 md:right-8 gb"
         >
           185
           <span class="light-grey text-sm">GB LEFT</span>
@@ -61,7 +63,9 @@
             <span class="dot right"></span>
           </div>
         </div>
-        <p class="w-[460px] m-auto flex justify-between inline text-xs mt-1">
+        <p
+          class="w-[260px] md:w-[460px] m-auto flex justify-between inline text-xs mt-1"
+        >
           <span>0 GB</span><span>1000 GB</span>
         </p>
       </div>
