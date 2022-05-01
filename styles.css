@@ -58,24 +58,39 @@
   content: " ";
   position: absolute;
   right: 0;
-  bottom: -25px;
-  border-top: 25px solid white;
-  border-left: 25px solid transparent;
+  bottom: -20px;
+  border-top: 20px solid white;
+  border-left: 20px solid transparent;
   border-bottom: none;
 }
 .gb {
   border-radius: 10px 10px 0px 10px;
 }
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   background-color: white;
   border-radius: 50%;
-  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2px;
 }
 .gb-size {
-  width: 460px;
-  height: 10px;
-  background-color: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  width: 340px;
+  height: 14px;
+  border-radius: 999px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
   z-index: 10;
+}
+.gb-bg {
+  width: 460px;
+  background-color: hsla(229, 57%, 11%, 0.47);
+  border-radius: 999px;
+  height: 20px;
+  padding-top: 3px;
+  padding-left: 3px;
 }
